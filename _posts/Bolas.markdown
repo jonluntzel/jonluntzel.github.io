@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 <p align=center> 
 <p align="center">
-  <img src="12.jpeg" width="800"/>
+  <img src="012.jpeg" width="800"/>
 </p>
 
 <div style="page-break-after: always;"></div>
