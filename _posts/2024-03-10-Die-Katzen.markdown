@@ -8,22 +8,22 @@ categories: jekyll update
 
 <p align=center>
 <p align="center">
-  <img src="/imgs/06.jpeg" width="910"/>
+  <img src="/imgs/06.jpeg" width="800"/>
 </p>
 
 <p align=center> 
 <p align="center">
-  <img src="/imgs/012.jpeg" width="360"/>
-  <img src="/imgs/54.jpeg" width="360"/>
+  <img src="/imgs/012.jpeg" width="380"/>
+  <img src="/imgs/54.jpeg" width="380"/>
 </p>
 
 <p align="center">
-  <img src="/imgs/05.jpeg" width="820"/>
+  <img src="/imgs/05.jpeg" width="800"/>
 </p>
 
 
 <p align="center">
-<img src="/imgs/53.jpeg" width="1030"/>
+<img src="/imgs/53.jpeg" width="800"/>
 </p>
 
 <p align="center">
