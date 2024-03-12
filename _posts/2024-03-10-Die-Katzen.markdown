@@ -6,20 +6,15 @@ categories: jekyll update
 ---
 <div style="page-break-after: always;"></div>
 
-<p align=center> 
-<p align="center">
-<img src="/imgs/182.jpeg" width="300" />
-</p>
-
 <p align=center>
 <p align="center">
-  <img src="/imgs/06.jpeg" width="810"/>
+  <img src="/imgs/06.jpeg" width="910"/>
 </p>
 
 <p align=center> 
 <p align="center">
-  <img src="/imgs/012.jpeg" width="380"/>
-  <img src="/imgs/54.jpeg" width="380"/>
+  <img src="/imgs/012.jpeg" width="360"/>
+  <img src="/imgs/54.jpeg" width="360"/>
 </p>
 
 <p align="center">
@@ -28,7 +23,7 @@ categories: jekyll update
 
 
 <p align="center">
-<img src="/imgs/53.jpeg" width="830"/>
+<img src="/imgs/53.jpeg" width="1030"/>
 </p>
 
 <p align="center">
@@ -47,7 +42,12 @@ categories: jekyll update
 
 <p align=center> 
 <p align="center">
- <img src="/imgs/422.jpeg" width="860"/> 
+ <img src="/imgs/422.jpeg" width="800"/> 
+  
+<p align=center> 
+<p align="center">
+<img src="/imgs/182.jpeg" width="250" />
+</p>
 </p>
 
 <p align="center">
