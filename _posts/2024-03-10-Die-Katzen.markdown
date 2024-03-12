@@ -13,8 +13,8 @@ categories: jekyll update
 
 <p align=center> 
 <p align="center">
-  <img src="/imgs/012.jpeg" width="370"/>
-  <img src="/imgs/54.jpeg" width="370"/>
+  <img src="/imgs/012.jpeg" width="365"/>
+  <img src="/imgs/54.jpeg" width="365"/>
 </p>
 
 <p align="center">
