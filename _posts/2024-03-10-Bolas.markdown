@@ -6,41 +6,41 @@ categories: jekyll update
 ---
 <p align=center> 
 <p align="center">
-  <img src="imgs/012.jpeg" width="800"/>
+  <img src="/imgs/012.jpeg" width="800"/>
 </p>
 
 <div style="page-break-after: always;"></div>
 <p align=center>
 
 <p align="center">
-  <img src="../imgs/04.jpeg" width="800"/>
+  <img src="/imgs/04.jpeg" width="800"/>
 </p>
 
 <div style="page-break-after: always;"></div>
 <p align=center>
 <p align="center">
   <img src="/imgs/51.jpeg" height="500"/> 
-  <img src="./imgs/41.jpeg" height="500"/> 
+  <img src="/imgs/41.jpeg" height="500"/> 
 </p>
 
 <p align=center> 
 <p align="center">
- <img src="./imgs/08.jpeg" width="655"/> 
+ <img src="/imgs/08.jpeg" width="655"/> 
 </p>
 
 <p align=center> 
 <p align="center">
-  <img src="./imgs/02.jpeg" width="800" />
+  <img src="/imgs/02.jpeg" width="800" />
 </p>
 
 <div style="page-break-after: always;"></div>
 <p align=center> 
 <p align="center">
-<img src="./imgs/16.jpeg" width="330"/>
+<img src="/imgs/16.jpeg" width="330"/>
 </p>
 
 <p align="center">
-<img src="./imgs/26.jpeg" width="330"/> 
+<img src="/imgs/26.jpeg" width="330"/> 
 </p>
 
 Your soul echoes in the North
