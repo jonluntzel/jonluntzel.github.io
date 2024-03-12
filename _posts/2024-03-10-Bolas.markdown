@@ -1,31 +1,31 @@
 ---
 layout: post
-title:  "Bolas"
+title:  "Die Katzen"
 date:   2024-03-10 15:04:48 +0700
 categories: jekyll update
 ---
 <p align=center> 
 <p align="center">
-  <img src="/imgs/012.jpeg" width="800"/>
+  <img src="/imgs/012.jpeg" width="810"/>
 </p>
 
 <div style="page-break-after: always;"></div>
 <p align=center>
 
 <p align="center">
-  <img src="/imgs/04.jpeg" width="800"/>
+  <img src="/imgs/04.jpeg" width="820"/>
 </p>
 
 <div style="page-break-after: always;"></div>
 <p align=center>
 <p align="center">
-  <img src="/imgs/51.jpeg" height="450"/> 
-  <img src="/imgs/41.jpeg" height="450"/> 
+  <img src="/imgs/51.jpeg" height="480"/> 
+  <img src="/imgs/41.jpeg" height="480"/> 
 </p>
 
 <p align=center> 
 <p align="center">
- <img src="/imgs/08.jpeg" width="700"/> 
+ <img src="/imgs/08.jpeg" width="830"/> 
 </p>
 
 [//]: # (08 655)
