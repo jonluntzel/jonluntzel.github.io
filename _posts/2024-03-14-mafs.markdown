@@ -57,7 +57,7 @@ Fig 2: Order as a graph. Free regions link individual entries to the fixed chain
 
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
-Chains can neighbor free regions like in $1(23)4$ and we see the same chains and gaps $({{1,x},{y,4}})$ that enumerate 2-length selections xy from ${{ 2,3 }} ^{2}$. The analogy extends to multiple free regions or blocks - $1(23)(45)$.
+Chains can neighbor free regions like in $1(23)4$ and we see the same chains and gaps $({{1,x},{y,4}})$ that enumerate 2-length selections xy from $(2,3)\times(2,3)= \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix$. The analogy extends to multiple free regions or blocks - $1(23)(45)$.
 
 Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements such as $(12)$ in the order $(12)3$, implying 1 and 2 can freely swap. Or $1(234)5$ ensuring $2<4$ but the suborder indexed by $(234)$ has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - $(1(2)3)$. Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with $fib()$. A block makes $fib(b)$ permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using $||$ for cardinality, $fib(|(1(2)3)|)=fib(2)=2$, e.g. $(12) \rightarrow \text{{}12, 21\text{{} = \text{length} 2)$. 
 
@@ -67,7 +67,7 @@ $$\begin{matrix}112358... n \\ 012345... |b|\end{matrix}$$
 
 Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect $fib()$), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
 
-Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is $$\prod_{i=1}^{k}(n-(\sum_{j=1}^{k}b_j)-i)/(\prod_{k=1}^{|p|}p_{k}!)))$$ . The denominator accounts for symmetries in block assignments (212 permutes on same-valued indexes are identical).
+Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is $$\prod_{i=1}^{k}\frac{n-(\sum_{j=1}^{k}b_j)-i)}{\prod_{k=1}^{|p|}p_{k}!}$$ . The denominator accounts for symmetries in block assignments (212 permutes on same-valued indexes are identical).
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
@@ -89,7 +89,7 @@ $\det(XP//QY)=det(XY – QP)$  (look up rectangular determinant extensions and m
 but use xpqy labels
 $$\det(AB)=\det(A)\det(B), \det(X P // 0 Y) = \det(X)\det(Y)\det(I)\det(I) = det(X)det(Y)$$
 Then, $$\det(XP//QY)=det(X P // 0 Y-QX^{-1}P) = \det(X)\det(Y-QX^{-1}P)=\det(X(Y-QX^{-1}P))=\det(XY-QP)$$ which in our case is det(X.X-Y.Y).
-See Schur’s complement expansion in answers here. \det(A)\det(D-CA^-1B) for 4x4 block rectangular
+See Schur’s complement expansion in answers here. $$\det(A)\det(D-CA^-1B)$$ for 4x4 block rectangular
 
 <p align="center">
 <img src="./mafs/xpqy2.png" width="800"/>
