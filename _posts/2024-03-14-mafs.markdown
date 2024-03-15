@@ -11,7 +11,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 
   $$\frac{\prod_{i=1}^n i}{x}$$
 
-$$\\frac{\prod\limits_{i=1}^{k}(n-(\sum_{j=1}^{k}b_j)-i)}{\prod_{j=1}^{|p|}p_{j}!}$$
+$$\\frac{\prod\limits^{k}_{i=1}(n-\sum\limits^{k}_{j=1}b_j)-i)}{\sum\limits^{|p|}_{j=1}p_{j}!}$$
 
 <p align=center>
 $$\det (\lambda I - A) = 0$$
