@@ -11,6 +11,10 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 
  $$x=\frac{\prod\limits^{N}_{i=1}i}{x}$$
 
+ $$x=\frac{\prod\limits^{N}_{i=1}i}{\sum\limits^{N}_{i=1}i}$$
+
+ $$x=\frac{\prod\limits^{N}_{i=1}\sum\limits^{N}_{i=1}i}{x}$$
+ 
  $$x=\frac{\prod\limits^{N}_{i=1} \sum\limits^{N}_{i=1}i}{x}$$
 
  $$x=\frac{\prod\limits^{N}_{i=1}(n-\sum\limits^{k}_{j=1}b_{j})}{x}$$
