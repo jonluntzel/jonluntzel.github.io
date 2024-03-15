@@ -12,7 +12,7 @@ $$\det (\lambda I - A) = 0$$
 <p align =center>
 $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 </p>
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://pages.github.com/) [vid](github.com "Google's Homepage") by x on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [ok]([https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices] a [[video](https://pages.github.com/)](https://github.com/Budibase/budibase/discussions/640 "Homepage")by x on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
@@ -35,13 +35,17 @@ Researchers find subsets of matrices from the following construction:
 <p align="center">
   <img src=".png" width="300" height="300"/>
 </p>
-
+<p align=center>
 <sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
+</p?>
 
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So as a first stab we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
 <p align="center">
-<img src=".png" width="800"/> <sub>A 9*9 matrix with integer-linear eigenvalues.<sub>
+<img src=".png" width="800"/> 
+</p>
+<p align=center>
+  <sub>A 9*9 matrix with integer-linear eigenvalues.<sub>
 </p>
 
 For these orders what kind of permutations are squares of themselves? Well, applying a permutation twice resets the elements, so it must only contain local transpositions (swaps). Let's look at these orders graphically.
@@ -50,14 +54,14 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 <p align="center">
   <img src=".png" width="300" height="300"/>
 </p>
-
+<p align=center>
 <sub>Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.<sub>
-
+</p>
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
 Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in $1 x y,4$ and gaps that enumerate $2$-length selections $xy$ from  
 ```math
-\lbrace 2,3 \rbace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
+\lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
 ```
 The analogy extends to multiple free regions or blocks - $1(23)(45)$.
 
