@@ -7,7 +7,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 
   $$\prod_{i=1}^n i$$
 
-$$x=\frac{\sum\limits^{N}_{i=1}i}{\sum\limits^{N}_{j=1}j}$$
+  $$x=frac{\sum\limits^{N}_{i=1}i}{x}
 
   $$\frac{\prod_{i=1}^n i}{x}$$
 
