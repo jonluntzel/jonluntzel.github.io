@@ -11,6 +11,8 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 
  $$x=\frac{\prod\limits^{N}_{i=1}i}{x}$$
 
+ $$x=\frac{\prod\limits^{N}_{i=1}(n-\sum_\limits^{k}_{j=1}b_{j})}{x}$$
+
  $$\frac{\prod\limits^{k}_{i=1}(n-\sum_\limits^{k}_{j=1})}{x}$$
  
  $$\frac{\prod\limits^{k}_{i=1}(n-\sum\limits^{k}_{j=1}b_j-i}{\sum\limits^{|p|}_{j=1}p_{j}!}$$
