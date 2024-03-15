@@ -105,7 +105,8 @@ The initial construction does not actually span the space of stochastic matrices
 <sub>Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.<sub>
 </p>
 
-We can rewrite the resultant matrix $A$ as a $2*2$ block matrix ```math 
+We can rewrite the resultant matrix $A$ as a $2*2$ block matrix 
+```math 
 \begin{pmatrix} X & P \\ Q & Y\end{pmatrix}
 ```
 and exploit [Schur's complement](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) for invertible X to compute $\det(A) = \det(X)*\det(Y - Q . X^{-1} . P)$. Similar to the [cofactor expansion](#heading) we can recursively apply this definition to make headway on the 'why' ile matrices happen.
