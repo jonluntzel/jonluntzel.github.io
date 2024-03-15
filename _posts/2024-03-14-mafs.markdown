@@ -17,9 +17,7 @@ $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 
 [https://github.com/Budibase/budibase/discussions/640]
 
-[I'm an inline-style link](https://www.google.com)
-
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [ok](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) a [video](https://github.com/Budibase/budibase/discussions/640 "Homepage")by x on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video]([https://www.google.com](https://www.youtube.com/watch?v=OoG1-6eBNt4)) by Senya Shlosman on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
@@ -40,7 +38,7 @@ Researchers find subsets of matrices from the following construction:
 
 <p align=center>
 <p align="center">
-  <img src=".png" width="300" height="300"/>
+  <img src="/imgs/poog.png" width="300" height="300"/>
 </p>
 <p align=center>
 <sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
@@ -49,7 +47,7 @@ Researchers find subsets of matrices from the following construction:
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So as a first stab we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
 <p align="center">
-<img src=".png" width="800"/> 
+<img src="/imgs/9b9.png" width="800"/> 
 </p>
 <p align=center>
   <sub>A 9*9 matrix with integer-linear eigenvalues.<sub>
@@ -59,7 +57,7 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 
 <p align=center>
 <p align="center">
-  <img src=".png" width="300" height="300"/>
+  <img src="/imgs/paths.png" width="300" height="300"/>
 </p>
 <p align=center>
 <sub>Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.<sub>
@@ -70,7 +68,7 @@ Chains can neighbor free regions like in $1(23)4$ and we see the same chains at 
 ```math
 \lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
 ```
-The analogy extends to multiple free regions or blocks - $1(23)(45)$.
+The analogy extends to multiple free regions or blocks like $1(23)(45)$.
 
 Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements such as $(12)$ in the order $(12)3$, implying 1 and 2 can freely swap. Or $1(234)5$ ensuring $2<4$ but the suborder indexed by $(234)$ has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - $(1(2)3)$. Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with $fib()$. A block makes $fib(b)$ permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. Using || for cardinality, $fib(|(1(2)3)|)=fib(2)=2$, e.g. $(12) \rightarrow 
  | \lbrace 12, 21 \rbrace | = 2$.
@@ -87,12 +85,12 @@ Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k bl
 x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{j=1}p_{j}!}
 ```
 
-The denominator accounts for symmetries in block assignments ($212$ permutes on same-valued indexes are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
+You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ permutes on same-valued indexes are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
 <p align="center">
-<img src=".png" width="800"/>
+<img src="\imgs\iso3b3.png" width="800"/>
 </p>
 <p align=center>
 <sub>Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to isomorphism and variable relabeling (there are 10 of any rank)<sub>
@@ -115,12 +113,8 @@ and exploit [Schur's complement](https://math.stackexchange.com/questions/190565
 <img src="/imgs/xpqy2.png" width="800"/>
 </p>
 
-Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. Understanding the off-diagonal properties should help make sense of things.all n-term dets cancel $a^{(n-1)}$ terms
+Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. $n$-term determinants cancel $a^{(n-1)}$ terms in the denominator. 
 
 Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices. For example, $1(23)|4$ defines 3*3 and 1*1 ile submatrices, while $1(2|3)4$ does not. It's structurally nice to permute index labels around and partition out large ile submatrices.
 
 To avoid the overlap on 'blocks' as subsets of elements allowing local transpositions and 'blocks' as submatrices of a partitioned matrix, I'll call the former definition block-motifs. For partitions that do not interrupt block-motifs, the sub-block diagonals are ile for any ile matrix, and so working out the induction for the proof from a recursively defined XPQY-block-partition should be a satisfiable route to seeing how and why these miracles happen. 
-
-<p align="center">
-<img src=".png" width="420"/>
-</p>
