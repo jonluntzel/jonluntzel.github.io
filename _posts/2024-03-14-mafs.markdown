@@ -4,7 +4,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 $$\det (\lambda I - A) = 0$$
 </p>
 <p align =center>
-$\lambda$, the eigenvalues of A. Roots of $\det(A)$
+$\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 </p>
 
 Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a video by Senya Shlosman 
@@ -24,7 +24,7 @@ Researchers find subsets of matrices from the following construction:
 * Select a finite strict partial order (Fig. 1)
 * Determine size-n permutations phi which satisfy said order
 * Create a matrix whose (i,j) entries are $$\phi_{i}\phi_{j}(id)$$
-* For each entry, convert into a binary string marking increases or decreases in the sequence. For example, 132 -> 10.
+* For each entry, convert into a binary string marking increases or decreases in the sequence. For example, 132 $\rightarrow$ 10.
 
 <p align=center>
 <p align="center">
@@ -35,16 +35,11 @@ Fig. 1: the partial order defined by the relations (1<2, 2<3, 2<4) (transitive c
 
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So at first we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
-
-
 <p align="center">
 <img src=".png" width="800"/> A 9*9 matrix with integer-linear eigenvalues.
 </p>
 
-
-Describe paths of equal diag and how you overlap them find the original order, algorithm for converting to and from, etc.
-
-This first stab helps to associate partial orders with their valid permutations. What kind of permutations are squares of themselves? Well, applying a permutation twice resets the elements, so it must only contain local transpositions (swaps). Let's look at these orders graphically.
+For these orders what kind of permutations are squares of themselves? Well, applying a permutation twice resets the elements, so it must only contain local transpositions (swaps). Let's look at these orders graphically.
 
 <p align=center>
 <p align="center">
@@ -55,15 +50,15 @@ Fig 2: Order as a graph. Free regions link individual entries to the fixed chain
 
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
-Chains can neighbor free regions like in 1(23)4 and we see the same gaps in free regions ({{1,x},{y,4}}) that enumerate 2-length selections xy from $$\{2,3\}^{2}$$. Multiple free regions or blocks are fine - 1(23)(45) - as are larger blocks - (123)4(56). 
+Chains can neighbor free regions like in 1(23)4 and we see the same gaps in free regions ({{1,x},{y,4}}) that enumerate 2-length selections xy from $\{2,3\}^{2}$. Multiple free regions or blocks are fine - 1(23)(45) - as are larger blocks - (123)4(56). 
 
-We can expand from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps. A block (block-motif) allows non-disjoint swaps on a subset of elements such as (12) in the order (12)3, implying 1 and 2 can freely swap. Or 1(234)5 ensuring (2<4) but the suborder indexed by (234) has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - (1(2)3). Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with fib(). A block makes fib(b) permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using || for cardinality, fib(|(1(2)3)|)=fib(2)=2, e.g. (12)-> {12, 21} = length 2). 
+We can expand from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps. A block (block-motif) allows non-disjoint swaps on a subset of elements such as (12) in the order (12)3, implying 1 and 2 can freely swap. Or 1(234)5 ensuring (2<4) but the suborder indexed by (234) has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - (1(2)3). Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with fib(). A block makes fib(b) permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using || for cardinality, fib(|(1(2)3)|)=fib(2)=2, e.g. $(12) \rightarrow {12, 21} = length 2)$. 
 
 <p align=center>
-$$$$112358\hdots n$$$$
+$$112358\hdots n$$
 </p>
 <p align=center>
-$$012345\hdots \|b\|$$
+$$012345\hdots |b|$$
 </p>
 
 Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect fib()), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
