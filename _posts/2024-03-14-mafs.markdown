@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "mafs"
-date:   2024-03-14 15:04:48 +0700
+date:   2024-03-14
 categories: jekyll update
 ---
 
