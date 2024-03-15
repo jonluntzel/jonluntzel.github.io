@@ -4,7 +4,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 $$\det (\lambda I - A) = 0$$
 </p>
 <p align =center>
-$$\lambda$$, the eigenvalues of A. Roots of $$\det(A)$$
+$\lambda$, the eigenvalues of A. Roots of $\det(A)$
 </p>
 
 Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a video by Senya Shlosman 
@@ -55,12 +55,16 @@ Fig 2: Order as a graph. Free regions link individual entries to the fixed chain
 
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
-Chains can neighbor free regions like in 1(23)4 and we see the same gaps in free regions ({{1,x},{y,4}}) that enumerate 2-length selections xy from $${2,3}^{2}$$. Multiple free regions or blocks are fine - 1(23)(45) - as are larger blocks - (123)4(56). 
+Chains can neighbor free regions like in 1(23)4 and we see the same gaps in free regions ({{1,x},{y,4}}) that enumerate 2-length selections xy from $$\{2,3\}^{2}$$. Multiple free regions or blocks are fine - 1(23)(45) - as are larger blocks - (123)4(56). 
 
 We can expand from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps. A block (block-motif) allows non-disjoint swaps on a subset of elements such as (12) in the order (12)3, implying 1 and 2 can freely swap. Or 1(234)5 ensuring (2<4) but the suborder indexed by (234) has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - (1(2)3). Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with fib(). A block makes fib(b) permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using || for cardinality, fib(|(1(2)3)|)=fib(2)=2, e.g. (12)-> {12, 21} = length 2). 
 
-* $$112358\hdots n$$
-* $$012345\hdots \|b\|$$
+<p align=center>
+$$$$112358\hdots n$$$$
+</p>
+<p align=center>
+$$012345\hdots \|b\|$$
+</p>
 
 Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect fib()), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
 
@@ -79,7 +83,7 @@ Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to is
 Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.
 
 Section on recursive determinant with pictures, and that small rearrangement of block matrices to 
-Det[X]*Det[Y - Q . Inverse[X] . P] all n-term dets cancel a^(n-1) terms
+Det[X]*Det[Y - Q . X^{-1} . P] all n-term dets cancel a^(n-1) terms
 
 det(XP//QY)=det(XY – QP)  (look up rectangular determinant extensions and mess w) so nesting dets sort of points of reflection is in the grouping of blocks as result of det(det() on subminors
 
