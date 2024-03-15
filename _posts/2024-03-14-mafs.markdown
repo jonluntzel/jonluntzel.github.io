@@ -72,7 +72,7 @@ Expanding from matrices with constant diagonals to ones whose permutations allow
 $$\begin{matrix}112358... n \\ \text{ }012345... |b|\end{matrix}$$
 </p>
 
-Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect $fib()$ ), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
+Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in  $\mathbb{P} \cap fib()$ ), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
 
 Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is 
 
