@@ -30,7 +30,7 @@ Researchers find subsets of matrices from the following construction:
 * Select a finite strict partial order (Fig. 1)
 * Determine size-n permutations phi which satisfy said order
 * Create a matrix whose (i,j) entries are $\phi_{i}\phi_{j}(id)$
-* For each entry, convert into a binary string marking increases or decreases in the sequence. For example, 132 $\rightarrow$ 10.
+* For each entry, convert into a binary string marking increases or decreases in the sequence. For example, $132 \rightarrow 10$.
 
 <p align=center>
 <p align="center">
@@ -58,7 +58,8 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 <p align=center>
 <sub>Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.<sub>
 </p>
-Stacking the paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves. Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in $1 x y 4$ and gaps that enumerate $2$-length selections $xy$ from  
+  
+Stacking the paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves. $1(234)5$ Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in $1 x y 4$ and gaps that enumerate $2$-length selections $xy$ from  
   
 ```math
 \lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
