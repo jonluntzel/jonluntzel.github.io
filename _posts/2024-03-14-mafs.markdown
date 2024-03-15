@@ -7,7 +7,7 @@ $$\det (\lambda I - A) = 0$$
 $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 </p>
 
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a video by Senya Shlosman 
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a video by x
  on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
 
 <p align=center>
@@ -31,7 +31,7 @@ Researchers find subsets of matrices from the following construction:
   <img src=".png" width="300" height="300"/>
 </p>
 
-Fig. 1: the partial order defined by the relations (1<2, 2<3, 2<4) (transitive completion dashed). A partial order takes some elements and applies inequality constraints to them. Two permutations satisfy this order. 
+Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ (transitive completion dashed). A partial order takes some elements and applies inequality constraints to them. Two permutations satisfy this order. 
 
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So at first we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
@@ -50,20 +50,17 @@ Fig 2: Order as a graph. Free regions link individual entries to the fixed chain
 
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
-Chains can neighbor free regions like in 1(23)4 and we see the same gaps in free regions ({{1,x},{y,4}}) that enumerate 2-length selections xy from $\{2,3\}^{2}$. Multiple free regions or blocks are fine - 1(23)(45) - as are larger blocks - (123)4(56). 
+Chains can neighbor free regions like in $1(23)4$ and we see the same chains and gaps $({{1,x},{y,4}})$ that enumerate 2-length selections xy from $\{2,3\}^{2}$. The analogy extends to multiple free regions or blocks - $1(23)(45)$.
 
-We can expand from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps. A block (block-motif) allows non-disjoint swaps on a subset of elements such as (12) in the order (12)3, implying 1 and 2 can freely swap. Or 1(234)5 ensuring (2<4) but the suborder indexed by (234) has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - (1(2)3). Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with fib(). A block makes fib(b) permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using || for cardinality, fib(|(1(2)3)|)=fib(2)=2, e.g. $(12) \rightarrow {12, 21} = length 2)$. 
+Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements such as $(12)$ in the order $(12)3$, implying 1 and 2 can freely swap. Or $1(234)5$ ensuring $2<4$ but the suborder indexed by $(234)$ has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - $(1(2)3)$. Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with $\fib()$. A block makes $fib(b)$ permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. (Using $||$ for cardinality, $\fib(|(1(2)3)|)=fib(2)=2$, e.g. $(12) \rightarrow {12, 21} = \text{length} 2)$. 
 
 <p align=center>
-$$112358\hdots n$$
-</p>
-<p align=center>
-$$012345\hdots |b|$$
+$$\begin{matrix}112358 \hdots n \\ 012345 \hdots |b|\end{matrix}$$
 </p>
 
-Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect fib()), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
+Elementary block dimensions are the primes intersected with fib. If orders share the same prime block factorization (factor using values in primes intersect $\fib()$), they both yield n valid permutations. So the number of block orders yielding n permutations is equal to the number of unique prime block factorizations of n.
 
-Given k blocks of dimensions $$b_i$$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is $$\prod_{i=1}^{k}(n-(\sum_{j=1}^{k}b_j)-i)/(prod(map(!,p)))$$ . The denominator accounts for symmetries in block assignments (212 permutes on same-valued indexes are identical).
+Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is $$\prod_{i=1}^{k}(n-(\sum_{j=1}^{k}b_j)-i)/(prod(map(!,p)))$$ . The denominator accounts for symmetries in block assignments (212 permutes on same-valued indexes are identical).
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
@@ -78,22 +75,21 @@ Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to is
 Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.
 
 Section on recursive determinant with pictures, and that small rearrangement of block matrices to 
-Det[X]*Det[Y - Q . X^{-1} . P] all n-term dets cancel a^(n-1) terms
+$/det(X)*/det(Y - Q . X^{-1} . P)$ all n-term dets cancel $a^{(n-1)}$ terms
 
-det(XP//QY)=det(XY – QP)  (look up rectangular determinant extensions and mess w) so nesting dets sort of points of reflection is in the grouping of blocks as result of det(det() on subminors
+$\det(XP//QY)=det(XY – QP)$  (look up rectangular determinant extensions and mess w) so nesting dets sort of points of reflection is in the grouping of blocks as result of det(det() on subminors
 
 but use xpqy labels
-det(AB)=det(A)det(B), det(A B // 0 D) = det(A)det(D)det(I)det(I) = det(A)det(D)
-Then, det(AB//CD)=det(A B // 0 D-CA^-1B) = det(A)det(D-CA^-1B)=det(A(D-CA^-1B))=det(AD-CB) which in our case is det(X.X-Y.Y).
-See Schur’s complement expansion in answers here. det(A)det(D-CA^-1B) for 4x4 block rectangular
+$$\det(AB)=det(A)det(B), det(X P // 0 Y) = \det(X)\det(Y)\det(I)\det(I) = det(X)det(Y)$$
+Then, $$\det(XP//QY)=det(X P // 0 Y-QX^{-1}P) = \det(X)\det(Y-QX^{-1}P)=\det(X(Y-QX^{-1}P))=\det(XY-QP)$$ which in our case is det(X.X-Y.Y).
+See Schur’s complement expansion in answers here. \det(A)\det(D-CA^-1B) for 4x4 block rectangular
 
-Typo at Y-Q^-1P double check
 <p align="center">
 <img src="./mafs/xpqy2.png" width="800"/>
 </p>
-Fig. 4: Example decomposition and determinant calculation. Even for big n you can choose a sub-block X that is an ile matrix whose factors cancel from the inner contributing X^-1 term and outer det(X), while the remaining components form integer-linear factors and can conserve factors of det(X). Understanding the off-diagonal properties should help make sense of things.
+Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. Understanding the off-diagonal properties should help make sense of things.
 
-Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices. For example, 1(23)|4 defines 3*3 and 1*1 ile submatrices, while 1(2|3)4 does not. It's structurally nice to permute index labels around and partition out large ile submatrices.
+Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices. For example, $1(23)|4$ defines 3*3 and 1*1 ile submatrices, while $1(2|3)4$ does not. It's structurally nice to permute index labels around and partition out large ile submatrices.
 
 To avoid the overlap on 'blocks' as subsets of elements allowing local transpositions and 'blocks' as submatrices of a partitioned matrix, I'll call the former definition block-motifs. For partitions that do not interrupt block-motifs, the sub-block diagonals are ile for any ile matrix, and so working out the induction for the proof from a recursively defined XPQY-block-partition should be a satisfiable route to seeing how and why these miracles happen. 
 
