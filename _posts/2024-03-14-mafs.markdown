@@ -12,7 +12,7 @@ $$\det (\lambda I - A) = 0$$
 <p align =center>
 $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 </p>
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [ok]([https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices] a [[video](https://pages.github.com/)](https://github.com/Budibase/budibase/discussions/640 "Homepage")by x on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [ok](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) a [video](https://github.com/Budibase/budibase/discussions/640 "Homepage")by x on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So - armed with my troglodyte brain and a machine - poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
