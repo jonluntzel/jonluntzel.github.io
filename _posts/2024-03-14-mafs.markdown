@@ -22,7 +22,7 @@ $$det(A) = \sum_{i=1}^{n}(-1)^{i+j}a_{i,j}M_{i,j}$$
 $$det(A) = \sum_{\sigma \in S_{n}}^{}\big(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(i)}\big)$$
 </p>
 <p align=center>
-<sub>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.<sub> ok h </sub>
+<sub>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.<sub>
 </p?>
 
 Researchers find subsets of matrices from the following construction:
@@ -36,12 +36,12 @@ Researchers find subsets of matrices from the following construction:
   <img src=".png" width="300" height="300"/>
 </p>
 
-Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. 
+<sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
 
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So as a first stab we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
 <p align="center">
-<img src=".png" width="800"/> A 9*9 matrix with integer-linear eigenvalues.
+<img src=".png" width="800"/> <sub>A 9*9 matrix with integer-linear eigenvalues.<sub>
 </p>
 
 For these orders what kind of permutations are squares of themselves? Well, applying a permutation twice resets the elements, so it must only contain local transpositions (swaps). Let's look at these orders graphically.
@@ -51,7 +51,7 @@ For these orders what kind of permutations are squares of themselves? Well, appl
   <img src=".png" width="300" height="300"/>
 </p>
 
-Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.
+<sub>Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.<sub>
 
 Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
 
@@ -83,12 +83,12 @@ The initial construction does not actually span the space of stochastic matrices
 <p align="center">
 <img src=".png" width="800"/>
 </p>
-Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to isomorphism and variable relabeling (there are 10 of any rank)
+<sub>Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to isomorphism and variable relabeling (there are 10 of any rank)<sub>
 
 <p align="center">
 <img src=".png" width="800"/>
 </p>
-Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.
+<sub>Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.<sub>
 
 We can rewrite the resultant matrix $A$ as a $2*2$ block matrix ```math 
 \begin{pmatrix} X & P \\ Q & Y\end{pmatrix}
