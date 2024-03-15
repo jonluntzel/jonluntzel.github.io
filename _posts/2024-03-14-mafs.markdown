@@ -4,7 +4,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 $\det (\lambda I - A) = 0$
 </p>
 <p align =center>
-$\lambda$, the eigenvalues of A. Roots of $\det ($A$)$
+$\lambda$, the eigenvalues of A. Roots of $\det ($A
 </p>
 
 Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a video by Senya Shlosman 
@@ -14,7 +14,7 @@ Eigensystems curiously interlace individual entries and respond in surprising wa
 $$det(A) = \sum_{i=1}^{n}(-1)^{i+j}a_{i,j}M_{i,j}$$
 </p>
 <p align=center>
-$det(A) = \sum_{\sigma \in S_{n}}^{}(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(i)}$
+$$det(A) = \sum_{\sigma \in S_{n}}^{}(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(i)}$$
 </p>
 <p align=center>
 The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. Main point - getting a feel for how single entries in relation to others contribute to the full spectrum is hard.
