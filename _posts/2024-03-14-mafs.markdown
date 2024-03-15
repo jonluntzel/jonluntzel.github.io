@@ -13,7 +13,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 
  $$x=\frac{\prod\limits^{N}_{i=1}i}{\sum\limits{a}^{b}z}$$
  
- $$x=\frac{\prod\limits^{N}_{i=1}i}{\sum_{a}^{b}z}$$
+ $$x=\frac{\prod\limits^{N}_{i=1}i}{\sum\limits^{a}_{b}z}$$
 
 
  $$x=\frac{\prod\limits^{N}_{i=1}i}{\prod\limits^{N}_{i=1}i}$$
