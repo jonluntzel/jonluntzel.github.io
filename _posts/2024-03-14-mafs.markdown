@@ -22,7 +22,7 @@ $$det(A) = \sum_{i=1}^{n}(-1)^{i+j}a_{i,j}M_{i,j}$$
 $$det(A) = \sum_{\sigma \in S_{n}}^{}\big(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(i)}\big)$$
 </p>
 <p align=center>
-### [The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.]
+<sub>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.<sub> ok h </sub>
 </p?>
 
 Researchers find subsets of matrices from the following construction:
