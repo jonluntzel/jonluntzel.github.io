@@ -17,7 +17,7 @@ $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 
 [https://github.com/Budibase/budibase/discussions/640]
 
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video]([https://www.google.com](https://www.youtube.com/watch?v=OoG1-6eBNt4)) by Senya Shlosman on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) by Senya Shlosman on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
@@ -38,7 +38,7 @@ Researchers find subsets of matrices from the following construction:
 
 <p align=center>
 <p align="center">
-  <img src="/imgs/poog.png" width="300" height="300"/>
+  <img src="/imgs/poog.png" width="300"/>
 </p>
 <p align=center>
 <sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
@@ -57,14 +57,12 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 
 <p align=center>
 <p align="center">
-  <img src="/imgs/paths.png" width="300" height="300"/>
+  <img src="/imgs/paths.png" width="300"/>
 </p>
 <p align=center>
 <sub>Fig 2: Order as a graph. Free regions link their individual entries to the fixed chain but not within itself.<sub>
 </p>
-Stacking the paths we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves.
-
-Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in $1 x y,4$ and gaps that enumerate $2$-length selections $xy$ from  
+Stacking the paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves. Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in $1 x y,4$ and gaps that enumerate $2$-length selections $xy$ from  
 ```math
 \lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
 ```
@@ -113,8 +111,8 @@ and exploit [Schur's complement](https://math.stackexchange.com/questions/190565
 <img src="/imgs/xpqy2.png" width="800"/>
 </p>
 
-Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. $n$-term determinants cancel $a^{(n-1)}$ terms in the denominator. 
+<sub>Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. $n$-term determinants cancel $a^{(n-1)}$ terms in the denominator.<sub>
 
-Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices. For example, $1(23)|4$ defines 3*3 and 1*1 ile submatrices, while $1(2|3)4$ does not. It's structurally nice to permute index labels around and partition out large ile submatrices.
+Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices (Fig. 4). For example, $1(23)|4$ defines 3*3 and 1*1 ile submatrices, while $1(2|3)4$ does not. It's structurally nice to permute index labels around and partition out large ile submatrices.
 
 To avoid the overlap on 'blocks' as subsets of elements allowing local transpositions and 'blocks' as submatrices of a partitioned matrix, I'll call the former definition block-motifs. For partitions that do not interrupt block-motifs, the sub-block diagonals are ile for any ile matrix, and so working out the induction for the proof from a recursively defined XPQY-block-partition should be a satisfiable route to seeing how and why these miracles happen. 
