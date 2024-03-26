@@ -28,7 +28,8 @@ twitter_username: nah fam
 github_username:  jonluntzel
 
 # Build settings
-theme: minima
+# theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-latex
