@@ -76,10 +76,10 @@ Elementary block dimensions are the primes intersected with fib. If orders share
 
 Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is 
 
-$$x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{j=1}p_{j}!}$$
+$$x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{i=1}p_{i}!}$$
 
 
-You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ permutes on same-valued indexes are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
+You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($$212$$ same-valued index permutations are identical). For example when $$k=2$$ blocks of size  $$b=\lbrace 3,2 \rbrace$$, we have  $$x=(n-4)(n-3)$$, or  $$b=\lbrace 2,2 \rbrace$$ yields $$x=\frac{(n-3)(n-2)}{2}$$. If I have $$k=3$$ blocks $$\lbrace 6,2,2 \rbrace$$ then $$x=\frac{(n-9)(n-8)(n-7)}{2}$$, and so on. 
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
@@ -97,11 +97,11 @@ The initial construction does not actually span the space of stochastic matrices
 <sub>Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.<sub>
 </p>
 
-We can rewrite the resultant matrix $A$ as a $2*2$ block matrix 
+We can rewrite the resultant matrix $$A$$ as a $$2*2$$ block matrix 
 ```math 
 \begin{pmatrix} X & P \\ Q & Y\end{pmatrix}
 ```
-and exploit [Schur's complement](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) for invertible X to compute $\det(A) = \det(X)*\det(Y - Q . X^{-1} . P)$. Similar to the [cofactor expansion](#heading) we can recursively apply this definition to make headway on the 'why' ile matrices happen.
+and exploit [Schur's complement](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) for invertible X to compute $$\det(A) = \det(X)*\det(Y - Q . X^{-1} . P)$$. Similar to the [cofactor expansion](#heading) we can recursively apply this definition to make headway on the 'why' ile matrices happen.
 
 <p align="center">
 <img src="/imgs/67.png" width="800"/>
