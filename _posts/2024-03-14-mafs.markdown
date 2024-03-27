@@ -100,7 +100,7 @@ We can rewrite the resultant matrix $A$ as a $2*2$ block matrix
 
 $$\begin{pmatrix} X & P \\ Q & Y\end{pmatrix}$$
 
-and exploit [Schur's complement](https://math.stackexchange.com/questions/1905652/proofs-of-determinants-of-block-matrices) for invertible X to compute $\det(A) = \det(X)*\det(Y - Q . X^{-1} . P)$. Similar to the [cofactor expansion](#heading) we can recursively apply this definition to make headway on the 'why' ile matrices happen. [video](https://www.youtube.com/watch?v=OoG1-6eBNt4)
+and exploit Schur's complement for invertible X to compute $\det(A) = \det(X)*\det(Y - Q . X^{-1} . P)$. Similar to the cofactor expansion we can recursively apply this definition to make headway on the 'why' ile matrices happen.
 
 <p align="center">
 <img src="/imgs/67.png" width="800"/>
@@ -110,6 +110,6 @@ and exploit [Schur's complement](https://math.stackexchange.com/questions/190565
 <sub>Fig. 4: Example decomposition and determinant calculation. Even for big $n$ you can choose a sub-block $X$ that is an ile matrix whose factors cancel from the inner contributing $X^-1$ term and outer $\det(X)$, while the remaining components form integer-linear factors and can conserve factors of $\det(X)$. </sub>
 </p>
 
-Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices (Fig. 4). For example, $1(23)|4$ defines $n=3$ and $n=1$ ole submatrices, while $1(2|3)4$ does not. It's structurally nice to partition out large ile submatrices, which may require shuffling index labels around ($B =P^{-1}AP$ applies the same permutation to rows and columns, so it just shuffles the order of nodes in the partial order around).
+Working from a given block order you can partition it anywhere that does not interrupt a given block to get submatrices that are valid ile matrices (Fig. 4). For example, $1(23)|4$ defines $n=3$ and $n=1$ ole submatrices, while $1(2|3)4$ does not. It's structurally nice to partition out large ile submatrices, which may require shuffling index labels around ($B =P^{-1}AP$ applies the same permutation to rows and columns, so it just shuffles the order of nodes in the partial order around).$$$$
 
 To avoid the semantic overlap on 'blocks' as subsets of elements allowing local transpositions and 'blocks' as submatrices of a partitioned matrix, I'll call the former definition block-motifs. There are loose ends here, but I thought it would be nice to leave the circle open for pi day. For partitions that do not interrupt block-motifs, the sub-block diagonals are ile for any ile matrix, and so working out the induction for the proof from a recursively defined XPQY-block-partition should be a satisfiable route to seeing how and why these miracles happen. 
