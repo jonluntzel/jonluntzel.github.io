@@ -62,9 +62,7 @@ For these orders what kind of permutations are squares of themselves? Well, appl
   
 Stacking the paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to restrict their freedom amongst themselves. Chains can neighbor free regions like in $1(23)4$ and we see the same chains at $1$ and $4$ in paths $1\text{ }x\text{ }y\text{ }4$ and gaps that enumerate $2$-length selections $xy$ from the table below. The analogy extends to multiple free regions or blocks like $1(23)(45)$.
   
-```math
-\lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.
-```
+$$\lbrace 2,3 \rbrace \times \lbrace 2,3 \rbrace = \begin{pmatrix}22 && 23 \\ 32 && 33\end{pmatrix}.$$
 
 Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements such as $(12)$ in the order $(12)3$, implying 1 and 2 can freely swap. Or $1(234)5$ ensuring $2<4$ but the suborder indexed by $(234)$ has no other entries/edges. Visually a b-block has b-1 overlapping 2-blocks - $(1(2)3)$. Elementary block lengths of this slight expansion that we can build orders from are the primes intersected with $fib()$. A block makes $fib(b)$ permutations, and the product of disjoint block dimensions yields an order's resulting matrix size. Using || for cardinality, $fib(|(1(2)3)|)=fib(2)=2$, e.g. $(12) \rightarrow 
  | \lbrace 12, 21 \rbrace | = 2$.
@@ -80,7 +78,7 @@ Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k bl
 $$x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{i=1}p_{i}!}$$
 
 
-You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ same-valued index permutations are identical). For example when $k=2$ blocks of size  $$b=\lbrace 3,2 \rbrace$$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
+You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ same-valued index permutations are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
