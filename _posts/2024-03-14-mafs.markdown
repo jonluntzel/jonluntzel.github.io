@@ -13,7 +13,7 @@ $$\det (\lambda I - A) = 0$$
 $$\lambda  \text{, the eigenvalues of } A \text{. Roots of } \det(A)$$
 </p>
 
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) by Senya Shlosman on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
@@ -22,9 +22,8 @@ $$det(A) = \sum_{i=1}^{n}(-1)^{i+j}a_{i,j}M_{i,j}$$
 <p align=center>
 $$det(A) = \sum_{\sigma \in S_{n}}^{}\big(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(i)}\big)$$
 </p>
-<p align=center>
-<sub>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.<sub>
-</p>
+
+<sub><p align=center>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.</p><sub>
 
 Researchers find subsets of matrices from the following construction:
 * Select a finite strict partial order (Fig. 1)
