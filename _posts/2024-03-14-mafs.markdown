@@ -11,10 +11,9 @@ $$\det (\lambda I - A) = 0$$
 </p>
 <p align =center>
 $$\lambda  \text{, the eigenvalues of } A \text{. Roots of } \det(A)$$
-$ \lambda $
-\$ \lambda \$
-\( \lambda \)
-\\( \lambda \\)
+\$$ 5 + 5 $$ here
+\$ \lambda $ here
+\$\$ 5 + 5 $$ here
 </p>
 
 Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
