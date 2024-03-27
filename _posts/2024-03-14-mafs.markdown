@@ -24,12 +24,12 @@ $$det(A) = \sum_{\sigma \in S_{n}}^{}\big(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(
 </p>
 <p align=center>
 <sub>The cofactor expansion and its unrolled counterpart below relating the determinant to individual matrix entries. The intuition for how single entries in relation to others contribute to the full spectrum is often confusing.<sub>
-</p?>
+</p>
 
 Researchers find subsets of matrices from the following construction:
 * Select a finite strict partial order (Fig. 1)
 * Determine size-n permutations phi which satisfy said order
-* Create a matrix whose (i,j) entries are $\phi_{i}\phi_{j}(id)$
+* Create a matrix whose (i,j) entries are $$\phi_{i}\phi_{j}(id)$$
 * For each entry, convert into a binary string marking increases or decreases in the sequence. For example, $132 \rightarrow 10$.
 
 <p align=center>
@@ -37,8 +37,8 @@ Researchers find subsets of matrices from the following construction:
   <img src="/imgs/65.png" width="300"/>
 </p>
 <p align=center>
-<sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
-</p?>
+<sub>Fig. 1: the partial order defined by the relations $$(1<2, 2<3, 2<4)$$ on an $$n=4$$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. <sub>
+</p>
 
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So as a first stab we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
