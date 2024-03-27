@@ -10,8 +10,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 $$\det (\lambda I - A) = 0$$
 </p>
 <p align =center>
-$$ x = y^2 $$ blah blah
-$\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
+$$\lambda  \text{, the eigenvalues of } A \text{. Roots of } \det(A)$$
 </p>
 
 Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) by Senya Shlosman on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
