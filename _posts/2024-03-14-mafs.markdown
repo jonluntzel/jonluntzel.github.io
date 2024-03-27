@@ -13,7 +13,7 @@ $$\det (\lambda I - A) = 0$$
 $$\lambda  \text{, the eigenvalues of } A \text{. Roots of } \det(A)$$
 </p>
 
-Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area. So this here troglodyte brain got his stick out and poked around a bit.
+Eigensystems curiously interlace individual entries and respond in surprising ways from small perturbations. For that reason, a [video](https://www.youtube.com/watch?v=OoG1-6eBNt4) on matrices whose eigenvalues are integer-linear combinations of their entries caught my interest. I had (and have) a lot of questions about the area, so this here troglodyte brain got his stick out and poked around a bit.
 <a name="heading">
 </a>
 <p align=center>
@@ -78,7 +78,7 @@ Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k bl
 $$x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{i=1}p_{i}!}$$
 
 
-You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ same-valued index permutations are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
+You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ has repeating assignments). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
 
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
