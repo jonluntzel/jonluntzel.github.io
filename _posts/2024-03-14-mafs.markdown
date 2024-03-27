@@ -30,7 +30,7 @@ $$det(A) = \sum_{\sigma \in S_{n}}^{}\big(sgn(\sigma)\prod_{i=1}^{n}a_{i,\sigma(
 Researchers find subsets of matrices from the following construction:
 * Select a finite strict partial order (Fig. 1)
 * Determine size-n permutations phi which satisfy said order
-* Create a matrix whose (i,j) entries are $ \phi_{i}\phi_{j}(id) $
+* Create a matrix whose (i,j) entries are $ \\phi_{i}\\phi_{j}(id) $
 * For each entry, convert into a binary string marking increases or decreases in the sequence. For example, $132 \rightarrow 10$.
 
 <p align=center>
