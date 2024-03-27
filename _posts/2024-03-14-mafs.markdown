@@ -10,6 +10,7 @@ The spectrum of a matrix tells you a whole lot. Eigenvalues and matrix entries a
 $$\det (\lambda I - A) = 0$$
 </p>
 <p align =center>
+$$ x = y^2 $$ blah blah
 $\lambda$, the eigenvalues of $A$. Roots of $\det(A)$
 </p>
 
@@ -76,9 +77,8 @@ Elementary block dimensions are the primes intersected with fib. If orders share
 
 Given k blocks of dimensions $b_i$, let e and p be the unique dimensions of k blocks and their respective frequencies. The number of arrangements of the given blocks over n fixed elements (the # of such partial orders) is 
 
-```math
-x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{j=1}p_{j}!}
-```
+$$x=\frac{\prod\limits^{k}_{i=1}(n-(\sum\limits^{k}_{j=1}b_j-i))}{\prod\limits^{|p|}_{j=1}p_{j}!}$$
+
 
 You can think of it as a modified combinatorial problem with putting balls into bins. The denominator accounts for symmetries in block assignments ($212$ permutes on same-valued indexes are identical). For example when $k=2$ blocks of size  $b=\lbrace 3,2 \rbrace$, we have  $x=(n-4)(n-3)$, or  $b=\lbrace 2,2 \rbrace$ yields $x=\frac{(n-3)(n-2)}{2}$. If I have $k=3$ blocks $\lbrace 6,2,2 \rbrace$ then $x=\frac{(n-9)(n-8)(n-7)}{2}$, and so on. 
 
