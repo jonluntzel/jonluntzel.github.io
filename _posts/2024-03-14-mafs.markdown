@@ -64,13 +64,13 @@ Stacking the order's paths (Fig. 2) we can see shared vertices are fixed nodes a
 
 Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements. Above we had 2-element blocks such as $(12)$ in an order like $(12)3$, but 3-blocks like $1(234)5$ ensure $2<4$ while the suborder indexed by $(234)$ has no other entries/edges. Non-disjoint means some legal swaps overlap, here $(23)$ and $(34)$. A b-block has b-1 overlapping 2-blocks - $(1(2)3)$.
 
-Elementary block dimensions of this slight expansion are the primes intersected with $fib()$. A b-block yields $fib(b)$ permutations (its dimension), and the product of of each disjoint block's dimensions yields an order's resulting matrix size. Using || for cardinality, $fib(|(12)|)=fib(2)=2$ since $(12) \rightarrow | \lbrace 12, 21 \rbrace | = 2$. fib(|(1(2)(3)4)|)=fib(4)=5.
+Elementary block dimensions of this slight expansion are the Fibonacci terms. A b-block yields $fib(b)$ permutations (its dimension), and the product of of each disjoint block's dimensions yields an order's resulting matrix size. Using || for cardinality, $fib(|(12)|)=fib(2)=2$ since $(12) \rightarrow | \lbrace 12, 21 \rbrace | = 2$. fib(|(1(2)(3)4)|)=fib(4)=5.
 
 <p align=center>
 $$\begin{matrix}112358... n \\ \text{ }012345... b\end{matrix}$$
 </p>
 
-The term elementary refers to the fact that a matrix constructed from non-disjoint local permutations must be a product of elementary block dimensions $\in \mathbb{P} \cap fib()$. Unique prime block factorizations describe the number of ways we can reach a matrix of a given dimension.
+The term elementary refers to the fact that a matrix constructed from non-disjoint local permutations must be a product of elementary block dimensions $\in fib()$, while prime blocks are $\in \mathbb{P} \cap fib()$. Unique elementary factorizations describe the number of ways we can reach a matrix of a given dimension.
 
 Given $k$ blocks of dimensions $b_i$, let $e$ and $p$ be the unique dimensions of the $k$ blocks and their respective frequencies. The number of arrangements of the given blocks over $n$ fixed elements (the # of such partial orders) is 
 
