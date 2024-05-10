@@ -35,7 +35,7 @@ categories: jekyll update
 </p>
 
 <p align="center">
-<img src="/imgs/61.jpeg" width="600"/>
+<img src="/imgs/13.jpeg" width="600"/>
 </p>
 <div style="page-break-after: always;"></div>
 <p align=center>
@@ -43,12 +43,6 @@ categories: jekyll update
 <p align=center> 
 <p align="center">
  <img src="/imgs/422.jpeg" width="800"/> 
-  
-<p align=center> 
-<p align="center">
-<img src="/imgs/182.jpeg" width="250" />
-</p>
-</p>
 
 <p align="center">
 <img src="/imgs/30.jpeg" width="800"/>

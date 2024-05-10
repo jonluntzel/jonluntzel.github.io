@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "mafs"
+title:  "ILE Matrices"
 date:   2024-03-14 
 categories: jekyll update
 ---
@@ -60,7 +60,7 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 <sub>Fig 2: Order as a graph. Its permutations can be read from the existing paths.</sub>
 </p>
   
-Stacking the order's paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to section off their movement. Chains can enclose free regions like in $1(23)4$ as we see the same chains at $1$ and $4$ and gap $x$ in paths $1\text{ }x\text{ }4$. Multiple disjoint regions or blocks like $1(23)(45)$ are no different, and by node relabeling we can consider all swaps to be local swaps.
+Stacking the order's paths (Fig. 2) we can see shared vertices are fixed nodes and variable entries at an index are 2-cycles. Fixed nodes form a chain amongst themselves and free nodes wire to the start of fixed chains to section off their movement. Chains can enclose free regions like in $1(23)4$ (not to be confused with cycle notation - I am just enclosing swappable elements in parentheses) as we see the same chains at $1$ and $4$ and gap $x$ in paths $1\text{ }x\text{ }4$. Multiple disjoint regions or blocks like $1(23)(45)$ are no different, and by node relabeling we can consider all swaps to be local swaps.
 
 Expanding from matrices with constant diagonals to ones whose permutations allow non-disjoint local swaps, a block (block-motif) allows non-disjoint swaps on a subset of elements. Above we had 2-element blocks such as $(12)$ in an order like $(12)3$, but 3-blocks like $1(234)5$ ensure $2<4$ while the suborder indexed by $(234)$ has no other entries/edges. Non-disjoint means some legal swaps overlap, here $(23)$ and $(34)$. A b-block has b-1 overlapping 2-blocks - $(1(2)3)$.
 
