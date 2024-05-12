@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Môi Trường"
+date:   2024-05-11 17:30:36 +0700
+categories: jekyll update
+---
+<p align=center> 
+
+<p align=center>
+<p align="center">
+  <img src="/assets/images/s10.jpeg" width="368" />
+  <img src="/assets/images/s08.jpeg" width="368" />
+  <img src="/assets/images/s02.jpeg" width="368" />
+  <img src="/assets/images/m01.jpeg" width="368" />
+  <img src="/assets/images/s01.jpeg" width="800" />
+</p>
+
+&nbsp; &nbsp;
+&nbsp; &nbsp;
+
+<p align=center> 
+<p align="center">
+  <img src="/assets/images/c06.jpeg" width="800" />
+    <img src="/assets/images/c05.jpeg" width="368" />
+  <img src="/assets/images/c03.jpeg" width="368" />
+    <img src="/assets/images/c04.jpeg" width="368" />
+  <img src="/assets/images/c02.jpeg" width="368" />
+</p>
+
+&nbsp; &nbsp;
+&nbsp; &nbsp;
+
+<p align="center">
+  <img src="/assets/images/t05.jpeg" width="368" />
+  <img src="/assets/images/t11.jpeg" width="368" />
+  <img src="/assets/images/t08.jpeg" width="368" />
+   <img src="/assets/images/t17.jpeg" width="368" />
+ 
+   <img src="/assets/images/t09.jpeg" width="368" />
+   <img src="/assets/images/t06.jpeg" width="368" />
+  <img src="/assets/images/t03.jpeg" width="800" />
+</p>
+
+
+
+
