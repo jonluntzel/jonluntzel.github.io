@@ -15,7 +15,7 @@ Recently I finished a project with a good friend (check out his [website](https:
 $\text{eig\(}A\text{, batchsize, stagger\): }$  
 &nbsp;&nbsp;&nbsp;&nbsp; $n\text{, midpoint, midpointvalue, symbols} := \dots$  
 &nbsp;&nbsp;&nbsp;&nbsp; $\text{digits} := \text{batchsize}\*\(\text{stagger}+1\)$  
-&nbsp;&nbsp;&nbsp;&nbsp; $\text{indicatorvars} := $  
+&nbsp;&nbsp;&nbsp;&nbsp; $\text{indicatorvars} := \[\text{base}^{\lceil \frac{\text{digits}}{2}\]*i$  
 &nbsp;&nbsp;&nbsp;&nbsp; $\text{map} := \\{\text{symbols } \: \text{ randomreals}\\}$  
 &nbsp;&nbsp;&nbsp;&nbsp; $\text{coeffs} := \[\]$  
   
@@ -31,7 +31,7 @@ Symbolic variables are encoded as complex numbers, fixing one complex part to pr
 It is rare for me to truly believe in a project, but in this case I am chugging the koolaid. I concur with the researchers who discovered these matrices that it does compare to a miracle, and miracles beget miracles. That feeling pushed me to work - the speedups we were able to achieve are just an expression of a sliver of the potential energy these objects have. Also check out this cool triangle I made. 
 
 <p align="center">
-  <img src="/assets/images/0702.jpg" width="300"/>
+  <img src="/assets/images/0702t.jpg" width="300"/>
 </p>
 <p align=center>
 <sub> Projective barycentric coordinate for a conservative $n=3$ system where $a+b+c=1$. Allows negative masses and extension to infinity (points marked with $\pm$ are $\pm \infty$ in a given variable for $abc$). </sub>
