@@ -31,7 +31,7 @@ Symbolic variables are encoded as complex numbers, fixing one complex part to pr
 It is rare for me to truly believe in a project, but in this case I am chugging the koolaid. I concur with the researchers who discovered these matrices that it does compare to a miracle, and miracles beget miracles. That feeling pushed me to work - the speedups we were able to achieve are just an expression of a sliver of the potential energy these objects have. Also check out this cool triangle I made. 
 
 <p align="center">
-  <img src="/assets/imgs/0702.jpg" width="300"/>
+  <img src="/assets/images/0702.jpg" width="300"/>
 </p>
 <p align=center>
 <sub> Projective barycentric coordinate for a conservative $n=3$ system where $a+b+c=1$. Allows negative masses and extension to infinity (points marked with $\pm$ are $\pm \infty$ in a given variable for $abc$). </sub>
