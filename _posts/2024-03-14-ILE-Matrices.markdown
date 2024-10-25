@@ -35,7 +35,7 @@ Researchers find subsets of matrices from the following construction:
 
 <p align=center>
 <p align="center">
-  <img src="/imgs/65.png" width="300"/>
+  <img src="/assets/images/002/65.png" width="300"/>
 </p>
 <p align=center>
 <sub>Fig. 1: the partial order defined by the relations $(1<2, 2<3, 2<4)$ on an $n=4$ size system (transitive completion dashed). A partial order  applies inequality constraints to a list of elements. In this case, two permutations satisfy the order. </sub>
@@ -44,7 +44,7 @@ Researchers find subsets of matrices from the following construction:
 You probably won't see a miracle by choosing a random order, and computing eigenvalues gets hard quick. So as a first stab we could filter for partial orders whose permutation's squares are all equal to one another to make the matrix diagonal have equal entries and increase the odds of seeing nice examples. We can find a more general way later.
 
 <p align="center">
-<img src="/imgs/66.png" width="800"/> 
+<img src="/assets/images/002/66.png" width="800"/> 
 </p>
 <p align=center>
   <sub>A 9*9 matrix with integer-linear eigenvalues.</sub>
@@ -54,7 +54,7 @@ For these orders what kind of permutations are squares of themselves? Well, appl
 
 <p align=center>
 <p align="center">
-  <img src="/imgs/64.png" width="300"/>
+  <img src="/assets/images/002/64.png" width="300"/>
 </p>
 <p align=center>
 <sub>Fig 2: Order as a graph. Its permutations can be read from the existing paths.</sub>
@@ -82,14 +82,14 @@ You can think of it as a modified combinatorial problem of putting balls into bi
 The initial construction does not actually span the space of stochastic matrices with integer-linear eigenvalues. Even then, are the stochastic integer-linear eigenvalue matrices still just a subset?
 
 <p align="center">
-<img src="/imgs/63.png" width="600"/>
+<img src="/assets/images/002/63.png" width="600"/>
 </p>
 <p align=center>
 <sub>Fig. 3: The set of all compatible full-rank 3*3 row-stochastic matrices up to isomorphism, transpose, and variable relabeling (there are 10 of any rank)</sub>
 </p>
 
 <p align="center">
-<img src="/imgs/62.png" width="600"/>
+<img src="/assets/images/002/62.png" width="600"/>
 </p>
 <p align=center>
 <sub>Fig. 3b: Same set, but 4*4 matrices & sorted by their eigenvalues.</sub>
@@ -104,7 +104,7 @@ and exploit Schur's complement for invertible X to compute $\det(A) = \det(X)*\d
 Similar to how the unrolled cofactor expansion relates matrix entries to eigenvalues, we can recursively apply XPQY-block-partitions to make headway on 'why' ile matrices happen with the added benefit of a simpler determinant calculation that ties in the partial order's structure.
 
 <p align="center">
-<img src="/imgs/67.png" width="800"/>
+<img src="/assets/images/002/67.png" width="800"/>
 </p>
 
 <p align=center>
